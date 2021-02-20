@@ -136,14 +136,22 @@ a{
     text-align: center;
     width: 150px;
     left: -50%;
-    top: 70%;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
 }
 
 .dropdown-menu a{
     display: block;
     color: white;
     padding: 10px;
-    text-decoration: none;
 }
 /* Home Section */
 .home{
