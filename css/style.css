@@ -6,11 +6,12 @@
           3.1 Home Section
           3.2 About Section
           3.3 Portfolio Section
-          3.4 Services Section
-          3.5 Prices Section
-          3.6 Team Section
-          3.7 Blog Page
-          3.8 Contact Section
+          3.4 offers section
+          3.5 Services Section
+          3.6 Prices Section
+          3.7 Team Section
+          3.8 Blog Page
+          3.9 Contact Section
  */
 /* 1- Common style*/
 /*
@@ -69,7 +70,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: montserrat;
+  font-family: montserrat,sans-serif,'Varela Round';
 }
 
 button{
@@ -289,11 +290,8 @@ a{
 }
 
 /* Portfolio Section */
-.portfolio{
-  background-color: #f9f9f9;
-}
 .portfolio-content{
-
+    background-color: #fafafa;
 }
 .portfolio-item{
   float: left;
@@ -375,6 +373,100 @@ top: 0px;
   line-height: 40px;
 }
 /* Services Section */
+.offer-content{
+  float: left;
+  width: 30%;
+  height: 200px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 25px;
+  padding: 50px 10px 50px 70px;
+  position: relative;
+}
+.offer-content.mg{
+  margin: 0px 5%;
+}
+.offer-content i{
+  position: absolute;
+  top: 50px;
+  left:15px;
+  color: #6195ff;
+}
+.offer-content-title{
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  transition: color 0.5s;
+}
+
+.offer-content-desc{
+  line-height: 1.5;
+  color: #999
+}
+.offer-content:hover .offer-content-title{
+  color: #fff;
+}
+/* Service Section */
+.service{
+  background-color: #f9f9f9
+}
+
+.service-item{
+  float: left;
+  width: 50%;
+}
+.service-item .section-header{
+  text-align: left;
+}
+.service-item .line{
+  margin:0 0 40px 0;
+}
+
+.service-item-desc{
+  padding-right: 30px;
+  color: #999;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.service-list{
+  list-style: none;
+}
+
+.service-list li i{
+  border: 1px solid #6195ff;
+  color: #6195ff;
+  border-radius: 50%;
+  padding: 7px 4px;
+  margin-right: 5px;
+}
+.service-list li{
+  margin-bottom: 10px;
+}
+
+.service-item-img img{
+  width: 100%;
+}
+
+.service-bullets{
+  list-style: none;
+  text-align: center;
+}
+.service-bullets li{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #e9e9e9;
+  margin: 10px 5px;
+  border-radius: 50%
+}
+.service-bullets li.active{
+  background-color: #6195ff;
+}
+.service-bullets li:hover{
+  background-color: #6195ff;
+}
+
 /* Prices Section */
 /* Team Section */
 /* Blog Page */
